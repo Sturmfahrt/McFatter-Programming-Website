@@ -1,0 +1,207 @@
+body {
+  font-family: arial;
+  text-align: center;
+  background-image: url("backgroundwithlogo.jpg");
+}
+
+@font-face {
+  font-family: "audiowide";
+  src: url("Audiowide-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "prosto";
+  src: url("ProstoOne-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "kreon";
+  src: url("Kreon-Regular.ttf") format("truetype");
+}
+
+h1 {
+  font-family: audiowide;
+}
+
+ul {
+  text-align: center;
+  list-style-position: inside;
+  font-size: 20px;
+}
+
+.nobullet {
+  list-style-type: none;
+}
+
+pre {
+  font-family: arial;
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+header {
+  padding-bottom: none;
+  padding-top: 50px;
+  margin: auto;
+  background-color: white;
+  border: solid;
+  width: 100%;
+  border-radius: 25px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 16px;
+  font-family: audiowide;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+
+nav li a:hover {
+  background-color: #00b3b3;
+}
+
+nav li:last-child {
+  border-right: none;
+}
+
+div.stuka {
+  background: rgba(255, 255, 255, .75);
+  width: 90%;
+  border: 5px solid black;
+  padding: 25px;
+  margin: auto auto;
+  border-radius: 25px;
+  font-family: kreon;
+}
+
+.button {
+  background-color: #33cccc;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.active {
+  background-color: #33cccc;
+  color: white;
+}
+
+#container {
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  background: rgba (255, 255, 255 100%);
+}
+
+div.photobanner {
+  height: 300px;
+  width: 6000px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.photobanner img {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.photobanner img:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.first {
+  -webkit-animation: bannermove 20s linear infinite;
+  -moz-animation: bannermove 20s linear infinite;
+  -ms-animation: bannermove 20s linear infinite;
+  -o-animation: bannermove 20s linear infinite;
+  animation: bannermove 20s linear infinite;
+}
+
+@keyframes "bannermove" {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -5650px;
+  }
+}
+
+@-moz-keyframes bannermove {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -5650px;
+  }
+}
+
+@-webkit-keyframes "bannermove" {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -5650px;
+  }
+}
+
+@-ms-keyframes "bannermove" {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -5650px;
+  }
+}
+
+@-o-keyframes "bannermove" {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -5650px;
+  }
+  .chart {
+    max-width: 100%;
+  }
+  .graph {
+    max-width: 100%;
+  }

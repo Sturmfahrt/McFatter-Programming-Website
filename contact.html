@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<link rel="stylesheet" type="text/css" href="design.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="logo.ico" src="logo.ico">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<title>Programming Website</title>
+</head>
+<body>
+<header>
+<img src="logo.png" alt="image failed to load" width="300" height="250">
+<h1>Contact Information</h1>
+</header>
+<hr>
+<nav>
+  <ul class="navbar">
+	<li ><a href="index.html" >Home</a></li>
+	<li ><a href="projects.html" >Projects</a></li>
+	<li ><a href="about.html" >About us</a></li>
+	<li class="active"><a href="contact.html" >Contact</a></li>
+	<li ><a href="form.html">Form</a></li>
+	<li style="float:right"><a href="login.html">Login/Sign-Up</a></li>
+  </ul>
+</nav>
+<div class="stuka">
+ <p style="font-size:30px">
+Contact Information:<br>
+McFatter Technical College<br>
+6500 Nova Drive<br>
+Davie, Florida 33317<br>
+Phone: <a href="tel:+1-754-321-5700">(754) 321-5700<a>
+</p>
+<style type="text/css">
+div#googleMap { margin: 0 auto 0 auto; }
+</style>
+<div id="googleMap" style="width:80%;height:400px;"></div>
+<script>
+function myMap() {
+var mapProp= {
+    center:new google.maps.LatLng(26.085185,-80.232284),
+    zoom:16,
+};
+var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDOPMd8_VWn7KApxMoCgHaC-bf7exP20HQ&callback=myMap"></script>
+</div>
+ </body>
+ </html>

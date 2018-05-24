@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<link rel="stylesheet" type="text/css" href="design.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="logo.ico" src="logo.ico">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<title>Programming Website</title>
+</head>
+<body>
+  <script type="text/javascript">
+function gamePrompt(source) {
+  var answer = confirm("once the game page loads it will start immediately \n do you want to continue?");
+  if (answer) {
+    location.href = source;
+  }
+  else {
+    alert("the game will not load then.");
+  }
+}
+</script>
+
+<header>
+<img src="logo.png" alt="image failed to load" width="300" height="250">
+<h1>Our Projects</h1>
+</header>
+<hr>
+<nav>
+  <ul class="navbar">
+	<li ><a href="index.html" >Home</a></li>
+	<li class="active"><a href="projects.html" >Projects</a></li>
+	<li ><a href="about.html" >About us</a></li>
+	<li ><a href="contact.html" >Contact</a></li>
+  <li ><a href="form.html">Form</a></li>
+  <li style="float:right"><a href="login.html">Login/Sign-Up</a></li>
+  </ul>
+</nav>
+<div class="stuka">
+	<h2>Website Project</h2>
+<p>as of right one group in the programming class is doing this website as their first project.</p>
+<br>
+<p>Our second project is a small javascript game</p>
+<h2>JavaScript Game</h2>
+<button onclick="gamePrompt('game.html')" class="submit-button button" >Load Game</button>
+<br>
+<br>
+<h2>Ethan's Money Clicker Game</h2>
+<button onclick="gamePrompt('https://studio.code.org/projects/applab/c7tW2n7FChvnibb35cPtCFHhdUQvshJKxo2LACCyoCs')" class="submit-button button" >Load Game</button>
+<br>
+<br>
+<h2>Max's Color Vision Tester</h2>
+<button onclick="gamePrompt('https://studio.code.org/projects/applab/gLomQTJk_zVs761yVQS9OXqgGLX4ijLCxlaFDVkHCvM')" class="submit-button button">Load Game</button>
+</div>
+</body>
+</html>

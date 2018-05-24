@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<link rel="stylesheet" type="text/css" href="design.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="logo.ico" src="logo.ico">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<title>Programming Website</title>
+
+<script>
+	function formPrompt() {
+		var newanswer = confirm("If you pressed this by accident, please copy all of your text now.");
+	}
+	if (newanswer) {
+	}
+	else {
+
+	}
+</script>
+</head>
+<body>
+<header>
+<img src="logo.png" alt="image failed to load" width="300" height="250">
+<h1>Form</h1>
+</header>
+<hr>
+<nav>
+  <ul class="navbar">
+  <li ><a href="index.html" >Home</a></li>
+  <li ><a href="projects.html" >Projects</a></li>
+  <li ><a href="about.html" >About us</a></li>
+  <li ><a href="contact.html" >Contact</a></li>
+  <li class="active"><a href="form.html">Form</a></li>
+  <li style="float:right"><a href="login.html">Login/Sign-Up</a></li>
+  </ul>
+</nav>
+<div class="stuka">
+<p>If you have any feedback you would like to leave please use the form below.</p>
+<form method="post" action="forms.php" enctype="encodingType">
+Name: <input type="text" name="fname" maxlength="30" required>
+<br>
+<br>
+<textarea name="texter" rows="20" cols="60" maxlength="400" required></textarea>
+<br>
+<br>
+<input type="reset" value="RESET" onclick="formPrompt()">
+<input type="submit" value="Submit">
+</form>
+</div>
+ </body>
+ </html>
